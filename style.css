@@ -1,0 +1,44 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width:50%
+  }
+  
+  .thumbnail {
+    margin: 10px;
+    overflow: hidden;
+    width: 150px;
+    
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .thumbnail img:hover 
+  {
+    transform:scale(1.5);
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+  
+  .overlay img {
+    max-width: 20%;
+    max-height: 20%;
+    margin-top: 10%;
+  }
+  
